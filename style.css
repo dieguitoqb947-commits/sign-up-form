@@ -14,14 +14,129 @@ body {
 }
 
 .card {
-  border: solid;
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
   max-width: 1440px;
+  min-width: 375px;
+  gap: 45px;
+}
+
+.card__main {
+  color: white;
+}
+
+.card__main-title {
+  font-weight: 700;
+  font-size: 50px;
+  max-width: 500px;
+}
+
+.card__main-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.card__form-banner {
+  position: absolute;
+  top: -65px;
+  border-radius: 10px;
+  background: hsl(248, 32%, 49%);
+  color: white;
+  padding: 5px;
+  width: 100%;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card__form-banner-accent {
+  font-weight: 700;
+  margin-right: 6px;
+}
+
+.card__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.2);
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.card__form-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.card__form-input {
+  padding: 15px;
+  width: 80%;
+  border-radius: 8px;
+  border: 1px solid hsl(246, 17%, 88%);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 30px;
+}
+
+.card__form-button {
+  background-color: hsl(154, 59%, 51%);
+  border-radius: 5px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  padding: 15px;
+  width: 89%;
+  cursor: pointer;
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2);
+  border: none;
+  transition: all 0.2s ease-in-out;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.card__form-button:hover {
+  background-color: hsl(154, 59%, 36%);
+}
+
+.card__form-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__form-divider-text {
+  font-size: 12px;
+  color: hsl(246, 25%, 77%);
+}
+
+.card__terms {
+  color: hsl(0, 100%, 74%);
+  font-weight: 500;
+}
+
+.card__form-checkbox {
+  margin-right: 10px;
 }
 
 .attribution {
+  margin-top: 35px;
   font-size: 11px;
   text-align: center;
 }
